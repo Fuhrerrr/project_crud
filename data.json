@@ -1,0 +1,32 @@
+[
+    {
+        "rank": 1,
+        "name": "John Doe",
+        "amount": 1000,
+        "association": "ABC"
+    },
+    {
+        "rank": 2,
+        "name": "Jane Doe",
+        "amount": 500,
+        "association": "DEF"
+    },
+    {
+        "rank": 3,
+        "name": "John Smith",
+        "amount": 250,
+        "association": "GHI"
+    },
+    {
+        "rank": 4,
+        "name": "Jane Smith",
+        "amount": 100,
+        "association": "JKL"
+    },
+    {
+        "rank": 5,
+        "name": "John Doe",
+        "amount": 50,
+        "association": "MNO"
+    }
+]

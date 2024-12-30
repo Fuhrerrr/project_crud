@@ -1,0 +1,70 @@
+/* Ensure the body and html take up full height */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+  }
+  
+  /* Container for the video and overlay content */
+  .video-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* Styling for the background video */
+  .background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the video covers the entire container */
+    z-index: -1; /* Places the video behind the overlay content */
+  }
+  
+  /* Centering the overlay content */
+  .overlay-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  /* Styling for the heading */
+  .overlay-content h1 {
+    margin-bottom: 10px;
+    font-size: 2em;
+  }
+  
+  /* Styling for the paragraph */
+  .overlay-content p {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+  }
+  
+  /* Styling for the button */
+  .overlay-content button {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Button hover effect */
+  .overlay-content button:hover {
+    background-color: #218838;
+  }
+  

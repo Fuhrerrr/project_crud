@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Donation Website</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js"></script>
+</head>
+<body>
+  <div id="container">
+    <!-- Top Donors Table -->
+    <h2>Top Donors</h2>
+    <table id="top-donors-table">
+      <thead>
+        <tr>
+          <th>Rank</th>
+          <th>Name</th>
+          <th>Amount Donated</th>
+          <th>Association</th>
+        </tr>
+      </thead>
+      <tbody id="top-donors-body">
+        <!-- Top donors will be dynamically inserted here -->
+      </tbody>
+    </table>
+
+    <!-- Donation Form -->
+    <h2>Make a Donation</h2>
+    <form id="donation-form">
+      <input type="text" id="donor-name" placeholder="Your Name" required>
+      <input type="number" id="donation-amount" placeholder="Donation Amount" required>
+      <select id="association" required>
+        <option value="" disabled selected>Select Association</option>
+        <option value="ataa">ATAA - Charity</option>
+        <option value="rawae">RAWAE - Water Support</option>
+        <option value="yatimi">YATIMI - Orphan Support</option>
+      </select>
+      <button type="submit">Donate</button>
+    </form>
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const donationForm = document.getElementById('donation-form');
+      
+      donationForm.addEventListener('submit', (event) => {
+        event.preventDefault();
+        const association = document.getElementById('association').value;
+
+        // Redirect based on the selected association
+        if (association === 'ataa') {
+          window.location.href = 'ATAA.html';
+        } else if (association === 'rawae') {
+          window.location.href = 'RAWAE.html';
+        } else if (association === 'yatimi') {
+          window.location.href = 'YATIMI.html';
+        }
+      });
+    });
+  </script>
+</body>
+</html>
